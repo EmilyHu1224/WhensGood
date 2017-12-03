@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <title>When's Good</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="icon" href="img/emily-icon.jpg">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/semantic.min.js"></script>
+    <script src="js/default.js"></script>
+</head>
+<body>
+    <div class="ui pointing menu">
+        <a data-tab='home' class="active item">
+        Home
+        </a>
+        <a data-tab='friends' class="item">
+                Friends
+        </a>
+        <a data-tab='calendar' class="item">
+        Room Calendar
+        </a>
+        <a data-tab='events' class="item">
+        Events
+        </a>
+        <div class="right menu">
+            <a data-tab='newroom' class="ui item">
+                New Room
+            </a>
+            <a data-tab='enterroom' class="ui item">
+                Enter Room
+            </a>
+        </div>
+    </div>
+    <div id='home_segment' data-tab='home' class="ui active tab segment">
+        <div class='ui container'>
+            <h1 class='ui header'>
+                <span id='name'>When's Good?</span>
+                <div class="ui large steps">
+                    <div class="step">
+                        <i class="home icon"></i>
+                        <div class="content">
+                        <div class="title">Room</div>
+                        <div class="description">Create a room</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <i class="users icon"></i>
+                        <div class="content">
+                        <div class="title">Friends</div>
+                        <div class="description">Invite your friends to the room</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <i class="calendar icon"></i>
+                        <div class="content">
+                        <div class="title">Group Calendar</div>
+                        <div class="description">View the time slots when everyone's available</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <i class="checkmark icon"></i>
+                        <div class="content">
+                            <div class="title">Make Plans</div>
+                            <div class="description">Pick the prime time to hang out!</div>
+                        </div>
+                    </div>
+                </div>
+            </h1>
+        </div>
+    </div>
+    <div data-tab='calendar' class="ui tab segment">
+
+    </div>
+    <div id='friends' data-tab='friends' class="ui tab segment">
+        <h1>
+            Edit friends in the room:
+        </h1>
+        <div class="ui massive middle aligned animated celled list">
+            <div class="item">
+                <div class="content">
+                <div class="header">
+                    <button class="ui icon button">
+                        <i class="remove icon"></i>
+                    </button>
+                    Helen
+                </div>
+                </div>
+            </div>
+            <div class="item">
+                <button class="ui icon button">
+                    <i class="remove icon"></i>
+                </button>
+                <div class="content">
+                    <div class="header">
+                        Christian
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <button class="ui icon button">
+                    <i class="remove icon"></i>
+                </button>
+                <div class="content">
+                    <div class="header">
+                        Daniel
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-tab='events' class="ui tab segment">
+        <p></p>
+    </div>
+    <div id='newroom_segment' data-tab='newroom' class="ui tab segment">
+        <form class="ui form">
+            <div class="field">
+                <h3>Pick a name for your room: </h3>
+                <input type="text" name="room_name" placeholder="Room Name">
+            </div>
+            <button class="ui button" type="submit">Create Room!</button>
+        </form>
+    </div>
+    <div data-tab='enterroom' class="ui tab segment">
+        <p></p>
+    </div>
+</body>

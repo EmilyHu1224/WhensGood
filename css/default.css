@@ -1,0 +1,31 @@
+#home_segment {
+    text-align: center;
+    left: 1%;
+    width: 98%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#name {
+    display: block;
+    font-size: 1.75em;
+    font-weight: bold;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#newroom_segment {
+    left: 30%;
+    width: 40%;
+    margin-top: 55px;
+}
+
+.ui.large.steps
+{
+    display: -webkit-inline-box;
+    margin: 0 auto;
+}
+
+#friends button{
+    left: 10%;
+}
